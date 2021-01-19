@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
-import { ReactiveFormsModule } from '@angular/forms';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { environment } from '../environments/environment';
 import { SigninComponent } from './signin/signin.component';
@@ -24,7 +23,6 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     AppRoutingModule,
     AngularFireModule.initializeApp(environment),
     AngularFireAuthModule,
-    ReactiveFormsModule,
     AngularFireDatabaseModule
   ],
   providers: [],
