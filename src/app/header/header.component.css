@@ -1,0 +1,10 @@
+.btn-primary {
+  background-color: green;
+  border-radius: 10px;
+  border-color: green;
+  padding: .35rem 1rem;
+}
+
+.navbar-brand {
+  color: white;
+}

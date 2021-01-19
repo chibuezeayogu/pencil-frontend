@@ -1,0 +1,36 @@
+body {
+  background: #007bff;
+  background: linear-gradient(to right, #0062E6, #33AEFF);
+}
+
+.card-signin {
+  border: 0;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.card-signin .card-title {
+  margin-bottom: 2rem;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.card-signin .card-body {
+  padding: 2rem;
+  background-color: f7f7f7;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.btn-google {
+  color: white;
+  background-color: #ea4335;
+  font-size: 80%;
+  border-radius: 5rem;
+}
+
+.btn-facebook {
+  color: white;
+  background-color: #3b5998;
+  font-size: 80%;
+  border-radius: 5rem;
+}

@@ -16,8 +16,8 @@ const envConfigFile = `export const environment = {
 }
 `
 
-console.log(colors.magenta('The file `environment.ts` will be written with the following content: \n'));
-console.log(colors.grey(envConfigFile));
+// console.log(colors.magenta('The file `environment.ts` will be written with the following content: \n'));
+// console.log(colors.grey(envConfigFile));
 
 writeFile(targetPath, envConfigFile, function(err) {
   if (err) {
