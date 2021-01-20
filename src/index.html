@@ -6,6 +6,18 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML" ></script>
+  <script>
+    window.MathJax = MathJax;
+    window.MathJax.Hub.Config({
+      showMathMenu: false,
+      tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]},
+      menuSettings: { zoom: "Double-Click" },
+      CommonHTML: { linebreaks: { automatic: true } },
+      "HTML-CSS": { linebreaks: { automatic: true } },
+              SVG: { linebreaks: { automatic: true } }
+    });
+  </script>
 </head>
 <body>
   <app-root></app-root>
