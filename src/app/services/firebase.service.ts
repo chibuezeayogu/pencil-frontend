@@ -26,8 +26,7 @@ export class FirebaseService {
       localStorage.setItem('uid', credential.user.uid)
       this.router.navigate(['/dashboard']);
     } catch(err) {
-      this.toastr.error(`Error: ${err.message}`)
-      console.log(err.message);
+      this.toastr.error('There was an error logging in. Please try again.')
     }
   }
 
