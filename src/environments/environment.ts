@@ -1,16 +1,13 @@
-// This file can be replaced during build by using the `fileReplacements` array.
-// `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
-// The list of file replacements can be found in `angular.json`.
-
 export const environment = {
-  production: false
-};
-
-/*
- * For easier debugging in development mode, you can import the following file
- * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
- *
- * This import should be commented out in production mode because it will have a negative impact
- * on performance if an error is thrown.
- */
-// import 'zone.js/dist/zone-error';  // Included with Angular CLI.
+  production: false,
+  firebaseConfig: {
+    apiKey: "AIzaSyDm1nR1NyO2agsR0oHugsFA6MVDNXJODGU",
+    authDomain: "pencil-auth.firebaseapp.com",
+    databaseURL: "https://pencil-auth-default-rtdb.firebaseio.com",
+    projectId: "pencil-auth",
+    storageBucket: "pencil-auth.appspot.com",
+    messagingSenderId: "196303937087",
+    appId: "1:196303937087:web:ddf514a5b131950a2c628a",
+    measurementId: "G-C6BR9XTPYK"
+  }
+}
