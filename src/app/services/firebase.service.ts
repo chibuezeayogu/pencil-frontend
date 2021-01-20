@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import firebase from 'firebase/app';
 import { AngularFireAuth } from '@angular/fire/auth';
+import { ToastrService } from 'ngx-toastr';
 
 
 @Injectable({
@@ -9,7 +10,7 @@ import { AngularFireAuth } from '@angular/fire/auth';
 })
 export class FirebaseService {
 
-  constructor(public afAuth: AngularFireAuth, public router: Router) {}
+  constructor(public afAuth: AngularFireAuth, public router: Router, private toastr: ToastrService) {}
 
   async googleSignin() {
     await this.authLogin(new firebase.auth.GoogleAuthProvider())
@@ -25,6 +26,7 @@ export class FirebaseService {
       localStorage.setItem('uid', credential.user.uid)
       this.router.navigate(['/dashboard']);
     } catch(err) {
+      this.toastr.error(`Error: ${err.message}`)
       console.log(err.message);
     }
   }

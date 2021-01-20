@@ -10,6 +10,8 @@ import { environment } from '../environments/environment';
 import { SigninComponent } from './signin/signin.component';
 import { HeaderComponent } from './header/header.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    BrowserAnimationsModule,
+	ToastrModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
