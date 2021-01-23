@@ -27,7 +27,7 @@ import { ToastrModule } from 'ngx-toastr';
     AngularFireAuthModule,
     AngularFireDatabaseModule,
     BrowserAnimationsModule,
-	ToastrModule.forRoot()
+	  ToastrModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
