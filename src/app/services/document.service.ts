@@ -11,16 +11,14 @@ export class DocumentService {
   constructor(public firestore: AngularFirestore, public router: Router) { }
 
   getUserDocument() {
-  const uid = this.getUserUid();
    return this.documentRef().get()
   }
 
   createUserDocument() {
-    const uid = this.getUserUid();
     this.documentRef().set({ text: ""});
   }
 
-  updateUserDocument(data: string) {
+  updateUserDocument(data: string): void {
     this.documentRef().update({ text: data });
   }
 
